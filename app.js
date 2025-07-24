@@ -16,6 +16,7 @@ const weatherEmojiMap = {
   "few clouds": "🌤️", // Partly cloudy
   "scattered clouds": "⛅", // Partly cloudy
   "broken clouds": "☁️", // Cloudy
+   "overcast clouds": "☁️", // Overcast cloud
   "shower rain": "🌧️", // Rainy
   "rain": "🌧️", // Rainy
   "thunderstorm": "⛈️", // Thunderstorm
@@ -31,17 +32,13 @@ const weatherBackgroundMap = {
     "clear sky": "url('https://media.istockphoto.com/id/1328689113/photo/summer-blue-sky-and-white-cloud-white-background-beautiful-clear-cloudy-in-sunlight-calm.jpg?s=612x612&w=0&k=20&c=37qEuwdxyQSx9kuS-_Gz0WiKFX6jMXZN9aRY47mN2vI=')", // Sunny
 
     "few clouds": "url('https://media.istockphoto.com/id/492866927/photo/few-little-fluffy-white-clouds-in-blue-sky.jpg?s=612x612&w=0&k=20&c=0BeCgArlnZP5ugmn4qz-gNOnGNd7wucrj1sB-CizI-Q=')", // Light clouds
-    
     "scattered clouds": "url('https://live.staticflickr.com/2106/1909487867_de140c7eb8_b.jpg')", // Scattered clouds
     "broken clouds": "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTySM1icKTNjTifKlmoj1L1Xn8HwE6HK78kuA&s')", // Broken clouds
-
+  "overcast clouds": "url('https://images.unsplash.com/photo-1499346030926-9a72daac6c63?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80')",
     "shower rain": "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYqRhuoX_px2oZvnW3QgXuRIjO8pPP2wSTA&s')", // Rain
-    "rain": "url('https://st4.depositphotos.com/16122460/29142/i/450/depositphotos_291421362-stock-photo-heavy-rain-falling-down-on.jpg')", // Heavy rain
-    
+    "rain": "url('https://st4.depositphotos.com/16122460/29142/i/450/depositphotos_291421362-stock-photo-heavy-rain-falling-down-on.jpg')", // Heavy rain    
     "thunderstorm": "url('https://media.13newsnow.com/assets/WVEC/images/e23dc125-7f4c-4783-8b28-925ec0d61d6f/e23dc125-7f4c-4783-8b28-925ec0d61d6f_750x422.jpg')", // Thunderstorm
-    
     "snow": "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT03AczGad7XydtVmb75dTFEmAOsWvJZxMzzQ&s')", // Snow
-
     "mist": "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmo-I0Dlb1x8VJ2A5UYb6A_T45MQFZYawKwg&s')", // Mist
     "haze": "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-kuvWHo_8BXB2L-5I04eK58PCTa101eNqpw&s')", // Haze
     "fog": "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7hDHQh-QF0Gdwcuq9nOb8xxCnkhcjWw3x2A&s')", // Fog
@@ -53,6 +50,7 @@ const backgroundColors = {
   "few clouds": "#80deea", // Light blue
   "scattered clouds": "#81d4fa", // Blue
   "broken clouds": "#90a4ae", // Grayish clouds
+  "overcast clouds": "#78909c",
   "shower rain": "#0097a7", // Rainy blue
   "rain": "#00796b", // Dark greenish-blue
   "thunderstorm": "#d32f2f", // Red for thunderstorm
